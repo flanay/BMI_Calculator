@@ -12,7 +12,7 @@ def read():
 
 
 def insert(row):
-    rows = read()#Red existing rows
+    rows = read()#Read existing rows
 
     with open(FILENAME, "w", newline='') as file:
         writer = DictWriter(file, fieldnames=FIELDS) #Creates the DictWriter object
